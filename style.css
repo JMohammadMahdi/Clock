@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'I-SansBlack';
+    src: url(./Font/IRANSansXFaNum-Black.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'I-YekanThin';
+    src: url(./Font/iranyekanwebthinfanum.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'I-YekanBlack';
+    src: url(./Font/iranyekanwebblackfanum.woff) format("woff");
+}
+
+
+body {
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    font-family: I-YekanBlack;
+    direction: rtl;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgba(8, 8, 8, 0.7);
+    margin: 0 0 30px;
+}
+
+.margin {
+    margin: 0 20px;
+}
+
+.Date-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.dayName,
+.date {
+    font-family: I-YekanThin;
+    color: #08B2E3;
+}
+
+.Clock {
+    min-width: 500px;
+    min-height: 75px;
+    background: rgba(8, 8, 8, 0.7);
+    color: #ffffff;
+    font-family: I-SansBlack;
+    font-size: 3rem;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px 0 rgba(104, 66, 255, 0.15),
+        inset 0 5px 30px 0 rgba(138, 138, 141, 0.479);
+}
+
+.Time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+
+.hour,
+.minutes,
+.secound {
+    letter-spacing: 5px;
+}
+
+.Time-description {
+    font-family: I-SansBlack;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.dot {
+    margin-bottom: 40px;
+}
